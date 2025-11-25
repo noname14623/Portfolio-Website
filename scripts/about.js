@@ -35,9 +35,9 @@ abouttabs.forEach((tab)=>{
           {
             id:1,
             date: "2025-2026",
-            position: "Freelance Web Developer",
-            company: "Self-Employed",
-            details:""
+            position: "Fresher",
+            company: "Self Learning",
+            details:"Currently building projects and improving skills through personal practice."
           },
           {
             id:2,
@@ -49,11 +49,25 @@ abouttabs.forEach((tab)=>{
           {
             id:3,
             date: "2025-2026",
-            position: "Freelance Web Developer",
+            position: "Learning Cpp",
             company: "Self-Employed",
             details:""
           },
-        ];
+          {
+            id:4,
+            date: "2025-2026",
+            position: "Learning Python",
+            company: "Self-Employed",
+            details:""
+          },
+          {
+            id:5,
+            date: "2025-2026",
+            position: "More Updates Coming Soon",
+            company: "Self-Learning",
+            details:""
+          },]
+          
 
         const experiencecontent = experiencelist.map((ele)=>{
             return`
@@ -75,28 +89,27 @@ abouttabs.forEach((tab)=>{
         }
         }else if(activetab === "education"){
            const education = document.querySelector(".education-list");
-
-           const educationlist = [
+          const educationlist = [
             {
               id: 1,
-              date: "2020-2023",
-              degree: "Bachelor of Computer Applications (BCA)",
-              institution: "CS UNIVERSIYT, dehradun",
-              details:"studied core subjects like data structures, web dev, and operating systems. built multiple academic projects using JavaScript and the MERN stack.",
+              date: "2022-2023",
+              degree: "High School",
+              institution: "S.T. Joseph`s Convent School NIT-5 ,FBD, HRY",
+              details:"Completed my Class 10th from the CBSE Board.",
             },
             {
               id: 2,
-              date: "2020-2023",
-              degree: "Bachelor of Computer Applications (BCA)",
-              institution: "CS UNIVERSIYT, dehradun",
-              details:"studied core subjects like data structures, web dev, and operating systems. built multiple academic projects using JavaScript and the MERN stack.",
+              date: "2023-2025",
+              degree: "Senior Secondary",
+              institution: "Holy Child Public School SEC-75,FBD,HRY",
+              details:"Completed my Class 10th from the CBSE Board.",
             },
             {
              id: 3,
-             date: "2020-2023",
-             degree: "Bachelor of Computer Applications (BCA)",
-             institution: "CS UNIVERSIYT, dehradun",
-             details:"studied core subjects like data structures, web dev, and operating systems. built multiple academic projects using JavaScript and the MERN stack.",
+             date: "2025-2029",
+             degree: "B.Tech in CE-DS(Data Science",
+             institution: "JC Bose University of Science & Technology, YMCA",
+             details:"Currently pursuing B.Tech in Computer Engineering (CEDS).",
             },
           ]; 
 
@@ -124,38 +137,38 @@ abouttabs.forEach((tab)=>{
         const skilllist = [{
           id:1,
           name: "HTML - Hyper Text Markup Language",
-          icon: "html.png"
+          icon: "html.svg"
         },
         {
           id:2,
           name: "CSS - ",
-          icon: "css.png"
+          icon: ""
         },
         {
           id:3,
           name: "JS - ",
-          icon: "js 1.png"
+          icon: ""
         },
         {
           id:4,
           name: "PYTHON",
-          icon: "py.png"
+          icon: ""
         },
         {
           id:5,
           name: "C++",
-          icon: "assets/skills/node.png"
+          icon: ""
         },
         {
           id:6,
           name: "GITHUB",
-          icon: "assets/skills/node.png"
+          icon: "github.svg"
         },
-        {
-          id:7,
-          name: "REACT.js",
-          icon: "assets/skills/node.png"
-        },
+        // {
+        //   id:7,
+        //   name: "REACT.js",
+        //   icon: "assets/skills/node.png"
+        // },
          ];
         
          const skillcontent = skilllist.map((ele)=>{
@@ -170,6 +183,50 @@ abouttabs.forEach((tab)=>{
 
          if(skills){
           skills.innerHTML = skillcontent;
+         }
+      }else if(activetab === "about-me"){
+         const myinfo = document.querySelector(".my-info");
+
+         const infolist = [
+          {
+           id: 1,
+           key: "Name",
+           value: "Prachi Garg",
+          },
+          {
+           id: 2,
+           key: "Country",
+           value: "India",
+          },
+          {
+           id: 3,
+           key: "Industry : ",
+           value: "Software & IT",
+          },
+          {
+           id: 4,
+           key: "Experience",
+           value: "Fresher",
+          },
+          {
+           id: 5,
+           key: "Address : ",
+           value: "H.No-146, SEC-23,FBD,HRY",
+          },
+         ];
+
+         const infocontent = infolist.map((ele)=>{
+          return`
+            <div class="info-box" key=${ele?.id}>
+            <span>${ele?.key}</span>
+            <span>${ele?.value}</span>
+            
+            </div>
+          `;
+         }).join("");
+
+         if(myinfo){
+            myinfo.innerHTML = infocontent
          }
       }
     });

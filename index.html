@@ -6,10 +6,15 @@
     <title>Prachi Garg Portfolio Website</title>
      <link rel="icon" href="recruitment.png">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
+
 </head>
 <body>
     <div class="main-container">
@@ -45,13 +50,13 @@
             <div class="bottom">
                 <button class="btn">Download CV</button>
                 <div class="social-icons">
-                     <a href="#">
+                     <a href="https://www.instagram.com/prachigarg_2007/?hl=en">
                         <i class="ph ph-instagram-logo"></i>
                      </a>
-                     <a href="#">
+                     <a href="https://github.com/noname14623">
                       <i class="ph ph-github-logo"></i>
                      </a>
-                     <a href="#">
+                     <a href="https://www.linkedin.com/in/prachi-garg-6b1bb6381/">
                        <i class="ph ph-linkedin-logo"></i>
                      </a>
                      <a href="#">
@@ -77,7 +82,7 @@
          <section id="about" class="content">
             <div class="sidebar"> 
                 <h3>Why Hire Me ?</h3>
-                <p>I'm a passionate and experienced MERN stack developer who simplifies concepts. I deliver quality mentorship, clear teaching, and reliable websites tailored to client needs with full dedication and care.</p>
+                <p>I combine clean design, efficient code, and problem-solving skills to deliver fast, responsive, and user-friendly digital solutions. I work with HTML, CSS, JavaScript, Python, and C++ to build websites, fix issues, automate tasks, and create smooth user experiences. I am reliable, quick to understand requirements, and focused on delivering quality work on time.</p>
                 <div class="tabs">
                     <span data-section="experience" class="tab">Experience</span>
                     <span data-section="education" class="tab">Education</span>
@@ -88,7 +93,7 @@
 
             <aside id="experience" class="tab-content active"> 
                  <h2>My <span>Experience</span></h2>
-                 <p>Here are some of my professional experiences that showcase my journey, skills, and dedication in web development and collaboration.</p>
+                 <p>Here are some of my professional experiences that showcase my journey, skills, and dedication in collaboration.</p>
                 <div class="experience-list">
                      <!-- <div class="experience-box">
                         <h4>2023-2024</h4>
@@ -117,14 +122,72 @@
             </aside>
             <aside id="about-me" class="tab-content"> 
                 <h2>About <span>Me</span></h2>
-                <p></p>
+                <p>
+                   I’m passionate about AI/ML and strengthening my DSA skills.
+                   I focus on logical thinking, clean coding, and continuous improvement.
+                </p>
+                <div class="my-info">
+
+                </div>
             </aside>
          </section>
-         <section id="projects" class="content">Projects</section>
-         <section id="contact" class="content">Contact</section>
+         <section id="projects" class="content">
+            <!-- <h2>Latest
+            <span>Projects</span>
+            </h2> -->
+            <div class="projects">
+            </div>
+         </section>
+         <section id="contact" class="content">
+            <div class="contact-info">
+                <h2>Let`s Work <span>Together</span></h2>
+                <p>I’m open to new projects, collaborations, and opportunities where I can contribute my skills in web development, JavaScript, Python, and UI/UX. I focus on quality, clarity, and timely delivery. Let’s work together to build solutions that are efficient, impactful, and tailored to your needs.</p>
+                <div class="contact-media">
+                </div>
+            </div>
+                 <form action="#" id="contact-form">
+                    <fieldset>
+                        <legend><span>Contcat</span>Me !</legend>
+
+                        <div class="fields">
+                            <div>
+                                <label for="name">Name :</label>
+                                <input type="text" name="name" id="name" placeholder="Write your name"
+                                 required/>
+                            </div>
+                            <div>
+                                <label for="email">Email :</label>
+                                <input type="email" name="email" id="email" placeholder="Write your email"
+                                 required/>
+                            </div>
+                            <div>
+                                <label for="phone">Phone :</label>
+                                <input type="tel
+                                " name="phone" id="phone" placeholder="Write your phone number"
+                                required/>
+                            </div>
+                            <div>
+                                <label for="message">Message :</label>
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Prachi Garg"  required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn" id="send-msg">Send Message</button>
+                       </fieldset>
+                </form>
+         </section>
      </div>
    
      <script src="scripts/app.js" type="module" defer></script>
      <script src="scripts/about.js" type="module" defer></script>
+     <script src="scripts/projects.js" type="module" defer></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <script src="scripts/contact.js" type="module" defer></script>
+      <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "KO9-cVO3Mg7v9-IO3",
+            });
+        })();
+    </script>
 </body>
 </html>

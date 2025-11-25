@@ -1,12 +1,10 @@
 const toggle = document.getElementById('menu-toggle');
 
-if(toggle){
-    toggle.addEventListener('change',
-        () =>{
-            document.body.classList.toggle
-            ("no-scroll", toggle.checked);
-        } );
- }
+if(toggle && toggle.checked){
+   document.body.classList.add("no-scroll");
+}else{
+     document.body.classList.remove("no-scroll");
+}
 
 const words = [
     " Just a beginner",
@@ -21,7 +19,7 @@ let wordindex =  0;
 let charindex = 0;
 let isdeleting = false;
 let typingdelay = 100;
-let erasingdelay = 100;
+let erasingdelay = 150;
 let nextworddelay = 1000;
 
 const type = () =>{
@@ -87,37 +85,37 @@ navlinks.forEach((link) =>{
                 id:1,
                 icon: "ph-code",
                 text: "Website Development",
-                para: "I build responsive and modern websites uisng the latest technologies like HTML, CSS, JavaScriptf",
+                para: "I build responsive and modern websites uisng the latest technologies like HTML, CSS, JavaScript",
             },
             { 
                 id:2,
                 icon: "ph-paint-brush",
-                text: "UX/UI Design",
-                para: "Custom mobile apps for andriod and iOS using React Native and Expo , dsigned to provide excellent UI/UX and performance",
+                text: "Basic UX/UI Design",
+                para: "I design simple, user-friendly interfaces with clean layouts and smooth user flow.",
             },
             { 
                 id:3,
                 icon: "ph-trend-up",
-                text: "SEO Optimization",
+                text: "Speed Optimization",
                 para: "I improve website visibility on search engines with optimized structure, keywoeds, and performance best practices.",
             },
             { 
                 id:4,
-                icon: "ph-palette",
-                text: "Graphic Design",
-                para: "Offering expert advice and solutions for tech projects,  helping individuals planning and stack decisions.",
+                icon: "ph-terminal",
+                text: "Python",
+                para: "I am learning Python fundamentals to move into AI, Machine Learning, and Data Science.",
             },
             { 
                 id:5,
-                icon: "ph-video",
-                text: "Mentorship & Training",
-                para: "Offering expert advice and solutions for tech projects,  helping individuals planning and stack decisions.",
+                icon: "ph-plus-circle",
+                text: "C++ ",
+                para: "I develop efficient programs and solve algorithmic problems using C++.",
             },
             { 
                 id:6,
-                icon: "ph-camera",
-                text: "Photography",
-                para: "End-to-end delivery of freelance projects - from planning to deployment - with quality assurance and post.",
+                icon: "ph-lightning",
+                text: "JavaScript",
+                para: "I create interactive features, dynamic components, and functional web scripts using JavaScript",
             }
         ];
 

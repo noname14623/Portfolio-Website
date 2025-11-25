@@ -91,7 +91,7 @@ aside h2 span{
     color: var(--green);
 }
 
-.experience-list , .education-list{
+.experience-list , .my-info , .education-list {
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 2rem;
@@ -100,14 +100,27 @@ aside h2 span{
     padding: 1rem;
 }
 
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    overflow-y:auto ;
+    max-height: 300px;
+    padding: 1rem;
+}
+
 .experience-list::-webkit-scrollbar,
-.education-list::-webkit-scrollbar
+.education-list::-webkit-scrollbar,
+.skill-list::-webkit-scrollbar,
+.my-info::-webkit-scrollbar-thumb
 {
      width: 5px;
 }
    
 .experience-list::-webkit-scrollbar-thumb,
-.education-list::-webkit-scrollbar-thumb{
+.education-list::-webkit-scrollbar-thumb,
+.my-info::-webkit-scrollbar-thumb,
+.skill-list::-webkit-scrollbar-thumb{
     background: var(--green);
     border-radius: 10px;
 }
@@ -124,7 +137,7 @@ aside h2 span{
     transition: all linear 0.3s;
 }
 
-.experience-box:hover{
+.experience-box:hover, .skill-box:hover{
     border-color: var(--green);
     box-shadow: 5px 5px 5px var(--green), -5px 5px 5px var(--green), 5px -5px 5px var(--green), -5px -5px 5px var(--green);
 }
@@ -162,6 +175,36 @@ aside h2 span{
     font-size: 1rem;
 }
 
+.skill-box{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--disabled);
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.skill-box image{
+    width: 4rem;
+    height:auto;
+}
+
+.my-info{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.info-box{
+    display: grid;
+    /* grid-template-columns: subgrid; */
+}
+
+.info-box span:first-child{
+    color: var(--green);
+}
+
 @media  screen and (width >= 768px) {
     
    #about.content.active{
@@ -197,6 +240,16 @@ aside h2 span{
 
     .company-name p{
         font-size: 1.2rem;
+    }
+
+    .skill-list{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .my-info{
+        grid-template-columns: repeat(2,1fr);
+        font-size: 1.7rem;
+        gap: 2rem 1rem;
     }
 }
 
