@@ -137,22 +137,22 @@ abouttabs.forEach((tab)=>{
         const skilllist = [{
           id:1,
           name: "HTML - Hyper Text Markup Language",
-          icon: "html.svg"
+          icon: "html.png"
         },
         {
           id:2,
           name: "CSS - ",
-          icon: ""
+          icon: "css.jpg"
         },
         {
           id:3,
           name: "JS - ",
-          icon: ""
+          icon: "jslogo1.webp"
         },
         {
           id:4,
           name: "PYTHON",
-          icon: ""
+          icon: "pylogo.png"
         },
         {
           id:5,
