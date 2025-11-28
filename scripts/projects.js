@@ -13,7 +13,7 @@ const projectlist = [
         id:2,
         number: "02",
         title: "Basic Projects",
-        description: "A collection of small JavaScript projects including QR generator, calculator, and tic-tac-toe, built to practice logic and UI interaction.",
+        description: "I have built several mini web projects using HTML, CSS, and JavaScript, including a Tic Tac Toe game, a Rock-Paper-Scissor game, a Text-to-Speech converter, and a QR Code generator. These projects showcase my skills in creating interactive interfaces, implementing game logic, working with browser APIs, and building responsive, user-friendly web applications.",
         techstack: ["HTML , CSS ,JS"],
         image: "jsprojects.jpg",
         livelink:"https://noname14623.github.io/QR-CODE-GENERATOR/",

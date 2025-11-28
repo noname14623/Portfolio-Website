@@ -152,17 +152,17 @@ abouttabs.forEach((tab)=>{
         {
           id:4,
           name: "PYTHON",
-          icon: "pylogo.png"
+          icon: "py.png"
         },
         {
           id:5,
           name: "C++",
-          icon: ""
+          icon: "c++.png"
         },
         {
           id:6,
           name: "GITHUB",
-          icon: "github.svg"
+          icon: "github.jpg"
         },
         // {
         //   id:7,
