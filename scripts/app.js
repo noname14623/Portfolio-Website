@@ -97,7 +97,7 @@ navlinks.forEach((link) =>{
                 id:3,
                 icon: "ph-trend-up",
                 text: "Speed Optimization",
-                para: "I improve website visibility on search engines with optimized structure, keywoeds, and performance best practices.",
+                para: "I improve website visibility on search engines with optimized structure, keywords, and performance best practices.",
             },
             { 
                 id:4,
