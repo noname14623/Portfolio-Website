@@ -107,7 +107,7 @@ abouttabs.forEach((tab)=>{
             {
              id: 3,
              date: "2025-2029",
-             degree: "B.Tech in CE-DS(Data Science",
+             degree: "B.Tech in CE-DS(Data Science)",
              institution: "JC Bose University of Science & Technology, YMCA",
              details:"Currently pursuing B.Tech in Computer Engineering (CEDS).",
             },
