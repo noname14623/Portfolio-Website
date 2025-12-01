@@ -5,8 +5,8 @@ const contactlist = [
         id: 1,
         icon: "ph ph-phone-call" ,
         name: "Phone" ,
-        value: "+91 9625130481",
-        href: "tel:+919625130481"
+        value: "+91 96251XXXXX",
+        href: "tel:+9196251XXXXX"
     },
     {
         id: 2,
